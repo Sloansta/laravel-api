@@ -12,6 +12,11 @@ class PostApiController extends Controller
         return PostModel::all();
     }
 
+    public function getSinglePost(PostModel $post)
+    {
+        return $post;
+    }
+
     public function store()
     {
         request()->validate([
